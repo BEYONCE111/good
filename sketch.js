@@ -187,7 +187,7 @@ class Particle {
   update() {
     this.position.add(this.velocity); // Update particle's position based on velocity
     this.velocity.add(this.acceleration); // Update particle's velocity based on acceleration
-    this.velocity.limit(10); // Limit the maximum velocity of the particle
+    this.velocity.limit(40); // Limit the maximum velocity of the particle
     if (this.position.x < 0 || this.position.x > width) {
       this.velocity.x *= -1; // Reverse particle's x-velocity if it goes beyond canvas width
     }
@@ -218,7 +218,7 @@ class Particle {
 
 // Resize canvas when the window size changes
 function windowResized() {
-  resizeCanvas(1902, 1602); // Adjust canvas size to match the window size
+  resizeCanvas(1900, 1060); // Adjust canvas size to match the window size
 }
 
 // Press the S key to save your drawing
