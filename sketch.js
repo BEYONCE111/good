@@ -218,7 +218,7 @@ class Particle {
 
 // Resize canvas when the window size changes
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight); // Adjust canvas size to match the window size
+  resizeCanvas(1902, 1602); // Adjust canvas size to match the window size
 }
 
 // Press the S key to save your drawing
